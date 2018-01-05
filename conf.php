@@ -1,5 +1,5 @@
 <?PHP
-$textfile = file('text.txt'); sort($textfile);
+$textfile = file('text.txt');
 $xpass ='555';
 
 $_SESSION["passcode"] = $xpass;
