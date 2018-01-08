@@ -6,7 +6,7 @@
 
   <title>test</title>
   <meta name="description" content="test">
-  <meta name="author" content="SitePoint">
+  <meta name="author" content="test">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="styles.css">
