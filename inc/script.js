@@ -4,14 +4,16 @@
 
           e.preventDefault();
 
-          $.ajax({
-            type: 'post',
-            url: 'post.php',
-            data: $('form').serialize(),
-            success: function () {
-              alert('form was submitted');
-            }
-          });
+          var massagez = $("#massage").val();
+     var usernamex = $("#username").val();
+    $.ajax({
+      type: "POST",
+      url: "post.php",
+      data: { massage: massagez , username: usernamex}
+    }).done(function( msg ) {
+      
+$("#massage").val("")
+});
 
         });
 
@@ -19,14 +21,14 @@
       
     $('#submit').click(function () {
     var massagez = $("#massage").val();
-
-
+     var usernamex = $("#username").val();
     $.ajax({
       type: "POST",
       url: "post.php",
-      data: { massage: massagez }
+      data: { massage: massagez , username: usernamex}
     }).done(function( msg ) {
       alert( "Data Saved: " + msg );
+
 });
 });
       
