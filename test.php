@@ -1,8 +1,8 @@
 
 <?php
 session_start();
-require_once ('func.php');
-require_once ('conf.php');
+require_once ('inc/func.php');
+require_once ('inc/conf.php');
 setcookie($cookie_name, $cookie_value, time() + (86400 * 2), "/"); // 86400 = 1 day
 
 
@@ -12,8 +12,7 @@ if(isset($_COOKIE[$cookie_name])) { // check if coockie is there if not page wil
 $clength = count($textfile); // count 
 for($x = 0; $x < $clength; $x++) {
 $zx = en($textfile[$x], $_SESSION["passcode"]);
-echo $zx."<br>";
-echo "	[decoded:][".de($textfile[$x], $_SESSION["passcode"]).""."]$textfile[$x]<br><br>"; 
+echo "	".htmlspecialchars(de($textfile[$x], $_SESSION["passcode"]), ENT_QUOTES, 'UTF-8')."<br>"; 
 }
 
 }else{die();}
