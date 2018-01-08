@@ -46,6 +46,6 @@ $("#massage").val("")
       
 function updateShouts(){
     // Assuming we have #shoutbox
-    $('#shoutbox').load('test.php');
+    $('#shoutbox').load('get.php');
 }
 setInterval( "updateShouts()", 1000 ); 
