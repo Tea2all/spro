@@ -18,7 +18,13 @@
 </head>
 
 <body>
+<?PHP
+
+?>
+
+
 	<div id='shoutbox'></div>
+
     <form method="POST" >
       <input id="massage" name="massage" value="" placeholder="massage"><br>
       <input id="username" name="username" value="" placeholder="name"><br>

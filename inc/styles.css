@@ -6,9 +6,15 @@ background-color:limegreen;
 
 #shoutbox{
 
-    max-height: 450px;
+    max-height: 400px;
     overflow: scroll;
     overflow-y: scroll;
 overflow-x: hidden;
-float:;
+background-color:white;
+}
+
+.odd { background-color:#6066; }
+
+#massage{
+ width: 100%;
 }
